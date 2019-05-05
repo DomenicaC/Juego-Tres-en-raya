@@ -18,6 +18,8 @@ public class JuegoTresEnRaya extends javax.swing.JFrame {
      */
     public JuegoTresEnRaya() {
         initComponents();
+        
+        ingresar();
         pnlO.setBackground(Color.green);
         pnlX.setBackground(Color.yellow);
 
@@ -443,7 +445,8 @@ public class JuegoTresEnRaya extends javax.swing.JFrame {
     
     
     private void btn20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn20ActionPerformed
-         //horizontal
+        opcion();
+        //horizontal
         cont.rayar(matriz, hor3, 3, 2, 0);
         //vertical
         cont.rayar(matriz, ver1, 4, 2, 0);
